@@ -1,0 +1,132 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+  font-family: 'Cutive Mono', monospace;
+}
+
+body{
+  background: url('../../resources/images/background3.jpg');
+  background-repeat: repeat;
+  background-color: black;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+
+
+/*header*/
+header{
+  min-height: 20vh;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav {
+width: 100%;
+justify-content: space-around;
+}
+
+nav a{
+  margin: 1rem;
+  background: linear-gradient(to right, #ffec1c, #ffc21c);
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /*opacity: 0.9;*/
+  font-weight: bold;
+  text-shadow: 1px 1px 50px black;
+  border: white 4px solid;
+  text-decoration: none;
+  color: white;
+
+}
+
+nav a:hover{
+ background: linear-gradient(to right, #eedb1b, #eeb11b);
+ cursor: pointer;
+}
+
+nav a: active, nav a:visited{
+   background: linear-gradient(to right, #f1ba03, #f29b04);
+}
+
+.container{
+  margin-top: 25vh;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+
+/*me*/
+.me{
+  min-height: 75vh;
+  width: 80%;
+  padding: 2rem;
+  justify-content: space-around;
+}
+
+.me p, .contact p{
+  max-width: 60%;
+  padding-top: 2rem;
+  text-align: center;
+
+}
+ .img-cont{
+   width: 30%;
+ }
+
+ .me img{
+   width: 100%;
+   height: auto;
+   border-radius: 7%;
+   opacity: 0.8;
+ }
+
+ /*audio*/
+.audio{
+  width: 80%;
+  min-height: 75vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 7%;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.audio p{
+  text-align: center;
+  padding: 2rem;
+}
+
+
+/*contact*/
+.contact{
+  min-height: 75vh;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.contact img{
+  width: 100%;
+  height: auto;
+  border-radius: 7%;
+  opacity: 0.8;
+}
